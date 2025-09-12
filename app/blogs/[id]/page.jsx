@@ -61,54 +61,10 @@ const Page = ({ params }) => {
           height={720}
           alt=""
         />
-        <h1 className="my-8 text-[26px] font-semibold">Introduction</h1>
-        <p>{data.description}</p>
-        <h3 className="my-5 text-[18px] font-semibold">
-          Step 1:Self-Reflection and Goal Setting
-        </h3>
-        <p className="py-3">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae, quae
-          accusamus dolorum explicabo illum repellendus ipsa assumenda minus
-          repellat quas totam rem.
-        </p>
-        <p className="py-3">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae, quae
-          accusamus dolorum explicabo illum repellendus ipsa assumenda minus
-          repellat quas totam rem.
-        </p>
-        <h3 className="my-5 text-[18px] font-semibold">
-          Step 2:Self-Reflection and Goal Setting
-        </h3>
-        <p className="py-3">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae, quae
-          accusamus dolorum explicabo illum repellendus ipsa assumenda minus
-          repellat quas totam rem.
-        </p>
-        <p className="py-3">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae, quae
-          accusamus dolorum explicabo illum repellendus ipsa assumenda minus
-          repellat quas totam rem.
-        </p>
-        <h3 className="my-5 text-[18px] font-semibold">
-          Step 3:Self-Reflection and Goal Setting
-        </h3>
-        <p className="py-3">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae, quae
-          accusamus dolorum explicabo illum repellendus ipsa assumenda minus
-          repellat quas totam rem.
-        </p>
-        <p className="py-3">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae, quae
-          accusamus dolorum explicabo illum repellendus ipsa assumenda minus
-          repellat quas totam rem.
-        </p>
-        <h3 className="my-5 text-[18px] font-semibold">Conclustion:</h3>
-        <p className="py-3">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae, quae
-          accusamus dolorum explicabo illum repellendus ipsa assumenda minus
-          repellat quas totam rem.
-        </p>
-
+       
+       <div className="blog-content" dangerouslySetInnerHTML={{__html:data.description}}></div>
+       
+       
         <div className="my-24">
           <p className="text-black font font-semibold my-4">
             Share this artical on socila medai
